@@ -159,6 +159,10 @@
   padding-bottom: unset;
 }
 
+.cart-window__list > div{
+  width: 100%;
+}
+
 .cart-window__header{
   display: flex;
   flex-direction: row;
