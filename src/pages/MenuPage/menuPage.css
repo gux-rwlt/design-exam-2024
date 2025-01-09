@@ -158,6 +158,7 @@
 
 .menu-page__content--container--mobile > div > div {
   gap: 16px;
+  justify-content: center;
 }
 
 .menu-page__content--title-container {

@@ -75,6 +75,7 @@
 
 html {
   height: fill-available;
+  overscroll-behavior: none;
 }
 
 body {
@@ -83,6 +84,11 @@ body {
   min-height: fill-available;
   margin: 0;
   font-family: 'Noto Sans JP';
+
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
 }
 
 button {
