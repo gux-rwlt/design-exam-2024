@@ -41,6 +41,7 @@ jobs:
         run: npm run build
         env:
           VITE_API_URL: ${{ vars.FAKE_API_URL }}
+          VITE_X_BASE_URL: ${{ vars.DEPLOY_X_BASE_URL }}
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
