@@ -21,7 +21,7 @@ const Filter: React.FC<FilterProps> = (props) => {
         <div className="filter__header">
           <h4 className="filter__header--title">フィルター</h4>
           <button className="filter__close-button" onClick={onClose}>
-            <CloseIcon size="24px" />
+            <CloseIcon size="24px" color="#0f172a" />
           </button>
         </div>
         <RadioGroup value={value} onChange={onChange}>

@@ -15,7 +15,7 @@ export const ItemCounter: React.FC<ItemCounterProps> = (props) => {
       <Button
         className={`design-exam-product-item-counter--decrease-button design-exam-product-item-counter--decrease-button-mode-${deviceMode}`}
         variant="basic"
-        icon={<MinusIcon />}
+        icon={<MinusIcon color="#0f172a" />}
         {...getDecreaseButtonProps()}
       />
       <span
@@ -25,7 +25,7 @@ export const ItemCounter: React.FC<ItemCounterProps> = (props) => {
       <Button
         className={`design-exam-product-item-counter--increase-button design-exam-product-item-counter--increase-button-mode-${deviceMode}`}
         variant="basic"
-        icon={<PlusIcon />}
+        icon={<PlusIcon color="#0f172a" />}
         {...getIncreaseButtonProps()}
       />
     </div>

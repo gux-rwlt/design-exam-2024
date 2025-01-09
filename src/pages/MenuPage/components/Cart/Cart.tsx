@@ -95,7 +95,7 @@ export const CartWindow: React.FC<CartWindowProps> = (props) => {
             <button
               className="cart-window__close-button"
               onClick={onClickCloseButton}>
-              <CloseIcon size="24px" />
+              <CloseIcon size="24px" color="#0f172a" />
             </button>
             <div className="cart__header cart-window__title-container">
               <span className="cart__icon-container cart-window__icon-container">
