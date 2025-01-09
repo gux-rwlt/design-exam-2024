@@ -17,6 +17,7 @@
   line-height: 1.5;
   text-wrap: nowrap;
   cursor: pointer;
+  color: var(--design-exam-slate-900);
   -webkit-tap-highlight-color: rgb(0 0 0 / 0);
 
   width: var(--button-width);

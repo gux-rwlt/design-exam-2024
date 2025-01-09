@@ -21,6 +21,7 @@
   height: 100%;
   min-height: 0;
   gap: 16px;
+  color: var(--design-exam-slate-900);
 }
 
 .cart__header {
@@ -122,6 +123,7 @@
   justify-content: space-between;
   align-items: flex-end;
   width: 100%;
+  color: var(--design-exam-slate-900);
   background-color: var(--design-exam-white);
   padding: 16px 16px 24px;
   gap: 10px;
@@ -155,6 +157,7 @@
 }
 
 .cart-window {
+  color: var(--design-exam-slate-900);
   padding: 16px;
   padding-bottom: unset;
 }

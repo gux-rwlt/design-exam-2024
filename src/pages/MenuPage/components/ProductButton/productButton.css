@@ -97,6 +97,7 @@
   box-sizing: border-box;
   position: relative;
   width: 100%;
+  color: var(--design-exam-slate-900);
   height: fit-content;
   font-family: inherit;
   font-size: 24px;
