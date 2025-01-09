@@ -1,7 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { Cart } from "./Cart";
 import { CartContext, reducer } from "@/providers/CartProvider";
-import { CatalogProvider } from "@/providers/CatalogProvider";
 import { SampleCart } from "@/test/server/cart";
 import React from "react";
 
@@ -14,9 +13,7 @@ const meta = {
 
     return (
       <CartContext.Provider value={{ cart: state, cartAction: dispatch }}>
-        <CatalogProvider>
-          <Cart {...args} />
-        </CatalogProvider>
+        <Cart {...args} />
       </CartContext.Provider>
     );
   },

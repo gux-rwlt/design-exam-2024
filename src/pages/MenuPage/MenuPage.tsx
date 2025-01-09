@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Button, CartIcon, Radio, RadioGroup } from "@/components";
+import { Radio, RadioGroup } from "@/components";
 import { CatalogView } from "./components/CatalogView";
 import { Cart, CartOverlay, CartWindow } from "./components/Cart";
 import { useMenuPage } from "./useMenuPage";
@@ -54,7 +54,6 @@ const MenuPageMobile: React.FC = () => {
     catalog,
     isLoading,
     error,
-    cart,
     isOpenCart,
     handleToggleCart,
   } = useMenuPage();

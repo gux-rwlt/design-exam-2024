@@ -1,4 +1,3 @@
-import ReactDOM from "react-dom";
 import { Button, CartIcon, CloseIcon } from "@/components";
 import { useCart } from "./useCart";
 import { CartItem } from "../CartItem";
