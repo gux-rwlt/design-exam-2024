@@ -80,7 +80,7 @@ html {
 
 body {
   height: 1px;
-  min-height: 100vh;
+  min-height: 100svh;
   min-height: fill-available;
   margin: 0;
   font-family: 'Noto Sans JP';
