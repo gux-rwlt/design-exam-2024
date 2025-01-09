@@ -60,6 +60,10 @@
     border: 1px solid var(--design-exam-rose-600);
     opacity: 0.25;
   }
+
+  svg {
+    fill: var(--design-exam-white);
+  }
 }
 
 .design-exam-button--basic {
@@ -84,6 +88,10 @@
     border: 1px solid var(--design-exam-slate-800);
     opacity: 0.25;
   }
+
+  svg {
+    fill: var(--design-exam-slate-900);
+  }
 }
 
 .design-exam-button--icon-container {
@@ -93,11 +101,11 @@
   justify-content: center;
   align-items: center;
   vertical-align: middle;
+}
 
-  @media (max-width: 1366px) {
-    width: 24px;
-    height: 24px;
-  }
+.design-exam-button--icon-container-mode-mobile {
+  width: 24px;
+  height: 24px;
 }
 
 .design-exam-button--icon-container-mode-mobile {
