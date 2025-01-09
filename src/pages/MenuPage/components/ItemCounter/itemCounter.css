@@ -1,0 +1,24 @@
+.design-exam-product-item-counter--container {
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.design-exam-product-item-counter--count {
+  color: var(--design-exam-slate-900);
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.5;
+  text-wrap: nowrap;
+  text-align: center;
+  width: 24px;
+  height: 24px;
+}
+
+.design-exam-product-item-counter--count-mode-mobile {
+  font-size: 14px;
+}

@@ -1,0 +1,111 @@
+@import url("../../../../index.css");
+
+.product-button {
+  box-sizing: border-box;
+  position: relative;
+  display: inline-flex;
+  padding: 14px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  outline: none;
+  background-color: var(--design-exam-white);
+  border: 2px solid var(--design-exam-slate-100);
+  border-radius: 12px;
+  cursor: pointer;
+  width: 180px;
+  -webkit-tap-highlight-color: rgb(0 0 0 / 0);
+
+  @media (hover: hover) {
+    &:hover {
+      box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.12);
+    }
+  }
+
+  &:active {
+    background-color: var(--design-exam-slate-300);
+    box-shadow: unset;
+  }
+
+  &:focus-visible {
+    border-color: var(--design-exam-rose-600);
+  }
+
+  &:disabled {
+    background-color: var(--design-exam-white);
+    border: 2px solid var(--design-exam-slate-100);
+    box-shadow: unset;
+    opacity: 0.25;
+    cursor: not-allowed;
+  }
+}
+
+.product-button-mode-mobile {
+  width: 136px;
+  padding: 10px;
+  gap: 4px;
+}
+
+.product-button--image-container {
+  box-sizing: border-box;
+  position: relative;
+  width: 148px;
+  height: 128px;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: var(--design-exam-white);
+}
+
+.product-button--image-container-mode-mobile {
+  width: 112px;
+  height: 100px;
+}
+
+.product-button--image {
+  object-fit: contain
+}
+
+.product-button--title {
+  box-sizing: border-box;
+  position: relative;
+  display: -webkit-box;
+  width: 100%;
+  color: var(--design-exam-slate-900);
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  text-align: start;
+  text-overflow: ellipsis;
+}
+
+.product-button--title-mode-mobile {
+  font-size: 14px;
+  height: 42px;
+}
+
+.product-button--price {
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  font-family: inherit;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.5;
+  text-wrap: nowrap;
+  text-align: start;
+}
+
+.product-button--price-mode-mobile {
+  font-size: 20px;
+}

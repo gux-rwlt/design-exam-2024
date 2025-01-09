@@ -1,0 +1,234 @@
+.cart__container {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 440px;
+  height: 100%;
+  padding: 24px 16px;
+  gap: 24px;
+  border-radius: 8px;
+  background-color: var(--design-exam-white);
+  flex-shrink: 0;
+}
+
+.cart {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  gap: 16px;
+}
+
+.cart__header {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.cart__icon-container {
+  display: block;
+  width: 32px;
+  height: 32px;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart__title {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.5;
+  margin: unset;
+}
+
+.cart__list {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: auto;
+}
+
+.cart__list:has(.cart__empty) {
+  justify-content: center;
+}
+
+.cart__empty {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--design-exam-slate-600);
+}
+
+.cart__list .design-exam-product-cart-item {
+  width: 100%;
+}
+
+.cart__total {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: fit-content;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-overlay__total {
+  flex-direction: column;
+  width: fit-content;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.cart__total-label {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.cart-overlay__total-label {
+  font-size: 14px;
+  color: var(--design-exam-slate-600);
+}
+
+.cart__total-price {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.cart-overlay__total-price {
+  font-size: 20px;
+}
+
+.cart-overlay {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  background-color: var(--design-exam-white);
+  padding: 16px 16px 24px;
+  gap: 10px;
+  z-index: 50;
+  box-shadow: 0px -8px 16px -4px rgba(0, 0, 0, 0.08);
+}
+
+.cart-window__scroll-block {
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: transparent;
+  z-index: 9000;
+}
+
+.cart-window__container {
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: calc(100% - 40px);
+  background-color: var(--design-exam-white);
+  gap: unset;
+  padding: unset;
+  z-index: 9000;
+}
+
+.cart-window {
+  padding: 16px;
+  padding-bottom: unset;
+}
+
+.cart-window__header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-window__close-button {
+  box-sizing: border-box;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  padding: unset;
+}
+
+.cart-window__title-container {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.cart-window__icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+}
+
+.cart-window__title {
+  font-size: 16px;
+}
+
+.cart-window__space {
+  box-sizing: border-box;
+  display: block;
+  content: "";
+  width: 24px;
+  height: 24px;
+}
+
+.cart-window__overlay {
+  box-sizing: border-box;
+  /* position: fixed; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: var(--design-exam-white);
+  padding: 16px;
+  gap: 16px;
+  box-shadow: 0px -8px 16px -4px rgba(0, 0, 0, 0.08);
+}
+
+.cart-window__total {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.cart-window__total-label {
+  font-size: 20px;
+}
+
+.cart-window__total-price {
+  font-size: 20px;
+}

@@ -1,0 +1,124 @@
+@import url("../../index.css");
+
+.design-exam-button {
+  box-sizing: border-box;
+  position: relative;
+  display: inline-flex;
+  padding: 16px 11px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  outline: none;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.5;
+  text-wrap: nowrap;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgb(0 0 0 / 0);
+
+  width: var(--button-width);
+  height: var(--button-height);
+
+  &:focus-visible {
+    outline: var(--design-exam-rose-600) solid 2px;
+    outline-offset: 2px;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+
+.design-exam-button-mode-mobile {
+  font-size: 16px;
+  padding: 9px 16px;
+}
+
+.design-exam-button--primary {
+  color: var(--design-exam-white);
+  background-color: var(--design-exam-rose-600);
+  border: 1px solid var(--design-exam-rose-600);
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--design-exam-rose-500);
+      border: 1px solid var(--design-exam-rose-500);
+    }
+  }
+
+  &:active {
+    background-color: var(--design-exam-rose-800);
+    border: 1px solid var(--design-exam-rose-800);
+  }
+
+  &:disabled {
+    background-color: var(--design-exam-rose-600);
+    border: 1px solid var(--design-exam-rose-600);
+    opacity: 0.25;
+  }
+}
+
+.design-exam-button--basic {
+  color: var(--design-exam-slate-900);
+  background-color: var(--design-exam-white);
+  border: 1px solid var(--design-exam-slate-800);
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--design-exam-slate-200);
+      border: 1px solid var(--design-exam-slate-800);
+    }
+  }
+
+  &:active {
+    background-color: var(--design-exam-slate-300);
+    border: 1px solid var(--design-exam-slate-800);
+  }
+
+  &:disabled {
+    background-color: var(--design-exam-white);
+    border: 1px solid var(--design-exam-slate-800);
+    opacity: 0.25;
+  }
+}
+
+.design-exam-button--icon-container {
+  display: flex;
+  width: 36px;
+  height: 36px;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+
+  @media (max-width: 1366px) {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.design-exam-button--icon-container-mode-mobile {
+  width: 24px;
+  height: 24px;
+}
+
+.design-exam-button--only-icon {
+  padding: 7px;
+  border-radius: 50%;
+
+  .design-exam-button--icon-container {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.design-exam-button--only-icon-mode-mobile {
+  padding: 5px;
+
+  .design-exam-button--icon-container-mode-mobile {
+    width: 12px;
+    height: 12px;
+  }
+}
