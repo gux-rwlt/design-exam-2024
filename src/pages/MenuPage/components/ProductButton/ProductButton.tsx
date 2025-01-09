@@ -1,7 +1,7 @@
 import React from "react";
 import { ProductButtonProps } from "./types";
 import { useProductButton } from "./useProductButton";
-import "./ProductButton.css";
+import "./productButton.css";
 
 export const ProductButton: React.FC<ProductButtonProps> = (props) => {
   const { imageUrl, description, title = "", price = 0, ...otherProps } = props;
