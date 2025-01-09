@@ -33,6 +33,7 @@
   width: 100svw;
   height: 100svh;
   overflow: auto;
+  color: var(--design-exam-slate-900);
 }
 
 .filter__overlay {
