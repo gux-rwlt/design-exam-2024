@@ -14,7 +14,7 @@ const meta = {
   component: Icon,
   tags: ["autodocs"],
   args: {
-    size: "24px"
+    size: "24",
   },
 } satisfies Meta<typeof Icon>;
 
@@ -55,14 +55,14 @@ export const IconList: Story = {
 
 export const Color: Story = {
   args: {
-    color: "#dc2626"
+    color: "#dc2626",
   },
-  render: (args) => <CartIcon {...args} />
+  render: (args) => <CartIcon {...args} />,
 };
 
 export const Size: Story = {
   args: {
-    size: "300px"
+    size: "300px",
   },
-  render: (args) => <CartIcon {...args} />
+  render: (args) => <CartIcon {...args} />,
 };

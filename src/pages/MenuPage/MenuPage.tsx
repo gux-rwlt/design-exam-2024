@@ -35,7 +35,7 @@ const MenuPageDesktop: React.FC = () => {
         </div>
         <div className="menu-page__content menu-page__content--desktop">
           <h2 className="menu-page__content--title menu-page__content--title--desktop">
-            商品を選択して下さい
+            商品を選択してください
           </h2>
           <div className="menu-page__content--container menu-page__content--container--desktop">
             <CatalogView data={catalog} isLoading={isLoading} error={error} />

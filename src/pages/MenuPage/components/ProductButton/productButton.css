@@ -67,7 +67,8 @@
 }
 
 .product-button--image {
-  object-fit: contain
+  object-fit: contain;
+  block-size:inherit;
 }
 
 .product-button--title {

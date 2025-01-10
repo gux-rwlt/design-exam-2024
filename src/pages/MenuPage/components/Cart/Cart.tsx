@@ -50,7 +50,7 @@ export const Cart: React.FC = () => {
           <span className="cart__total-price">${cart.totalPrice}</span>
         </div>
       </div>
-      <Button variant="primary">レジに進む</Button>
+      <Button variant="primary">カートを確認する</Button>
     </div>
   );
 };
@@ -147,7 +147,7 @@ export const CartWindow: React.FC<CartWindowProps> = (props) => {
             </span>
           </div>
           <Button variant="primary" width="100%">
-            レジに進む
+            カート
           </Button>
         </div>
       </div>

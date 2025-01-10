@@ -29,7 +29,10 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         ref={ref}
         {...getProps()}>
         {icon && (
-          <span className={`design-exam-button--icon-container`}>{icon}</span>
+          <span
+            className={`design-exam-button--icon-container design-exam-button--icon-container-mode-${deviceMode}`}>
+            {icon}
+          </span>
         )}
         {children}
       </button>

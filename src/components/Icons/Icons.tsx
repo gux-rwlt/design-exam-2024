@@ -16,7 +16,6 @@ export const Icon: React.FC<IconsProps> = (props) => {
     <svg
       className={`design-exam-icon ${className}`}
       xmlns="http://www.w3.org/2000/svg"
-      stroke="currentColor"
       fill="currentColor"
       viewBox={viewBox}
       width={size}
